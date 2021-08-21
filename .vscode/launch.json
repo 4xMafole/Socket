@@ -6,17 +6,17 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch DateClient",
+            "name": "Launch DateServer",
             "request": "launch",
-            "mainClass": "DateClient",
-            "args": "127.0.0.1",
+            "mainClass": "SequentialServer.DateServer",
             "projectName": "Socket_39920e0a"
         },
         {
             "type": "java",
-            "name": "Launch DateServer",
+            "name": "Launch DateClient",
             "request": "launch",
-            "mainClass": "DateServer",
+            "args": "127.0.0.1",
+            "mainClass": "SequentialServer.DateClient",
             "projectName": "Socket_39920e0a"
         },
         {
