@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TicTacToeServer",
+            "request": "launch",
+            "mainClass": "TicTacToeGame.TicTacToeServer",
+            "projectName": "Socket_39920e0a"
+        },
+        {
+            "type": "java",
             "name": "Launch CapitalizeClient",
             "request": "launch",
             "args": "127.0.0.1",
