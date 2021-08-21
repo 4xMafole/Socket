@@ -6,6 +6,21 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CapitalizeClient",
+            "request": "launch",
+            "args": "127.0.0.1",
+            "mainClass": "SimpleThreadedServer.CapitalizeClient",
+            "projectName": "Socket_39920e0a"
+        },
+        {
+            "type": "java",
+            "name": "Launch CapitalizeServer",
+            "request": "launch",
+            "mainClass": "SimpleThreadedServer.CapitalizeServer",
+            "projectName": "Socket_39920e0a"
+        },
+        {
+            "type": "java",
             "name": "Launch DateServer",
             "request": "launch",
             "mainClass": "SequentialServer.DateServer",

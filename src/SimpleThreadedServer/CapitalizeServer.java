@@ -2,12 +2,26 @@ package SimpleThreadedServer;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 
+/**
+ * A server program which accepts requests from clients to capitalize strings.
+ * When a client connects, a new thread is started to handle it. Receiving
+ * client data, capitalzing it, and sending the response back is all done on
+ * the thread, allowing much greater throughput because more clients acn be 
+ * handled concurrently.
+ */
 public class CapitalizeServer 
 {
+    /**
+     * Runs the server. When a client connects, the server spawns a new thread to do
+     * the servicing and immediately returns to listening. The application limits
+     * the number of threads via a thread pool (otherwise millions of clients could
+     * cause the server to run out of resources by allocating too many threads).
+     */
     public static void main(String[] args) throws IOException
     {
         try(var listener = new ServerSocket(59090))
