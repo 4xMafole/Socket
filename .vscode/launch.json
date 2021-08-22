@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ChatClient",
+            "request": "launch",
+            "args": "127.0.0.1",
+            "mainClass": "MultiuserChat.ChatClient",
+            "projectName": "Socket_39920e0a"
+        },
+        {
+            "type": "java",
             "name": "Launch ChatServer",
             "request": "launch",
             "mainClass": "MultiuserChat.ChatServer",
