@@ -1,0 +1,2 @@
+## **A Multi-User Chat Application**
+<p>Here is a chat server. The server must broadcast recently incoming messages to all the clients participating in a chat. This is done by having the server collect all of the client sockets in a dictionary, then sending new messages to each of them.</p>

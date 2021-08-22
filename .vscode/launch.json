@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ChatServer",
+            "request": "launch",
+            "mainClass": "MultiuserChat.ChatServer",
+            "projectName": "Socket_39920e0a"
+        },
+        {
+            "type": "java",
             "name": "Launch TicTacToeClient",
             "request": "launch",
             "mainClass": "TicTacToeGame.TicTacToeClient",
